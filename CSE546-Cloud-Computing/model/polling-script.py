@@ -30,7 +30,7 @@ s3 = boto3.client('s3', region_name='us-east-1')
 ec2 = boto3.client('ec2', region_name='us-east-1')
 
 req_queue_url = 'https://sqs.us-east-1.amazonaws.com/654654563274/1229679960-req-queue'
-res_queue_url = 'https://sqs.us-east-1.amazonaws.com/654654563274/1229679960-res-queue'
+res_queue_url = 'https://sqs.us-east-1.amazonaws.com/654654563274/1229679960-resp-queue'
 input_bucket = '1229679960-in-bucket'
 output_bucket = '1229679960-out-bucket'
 

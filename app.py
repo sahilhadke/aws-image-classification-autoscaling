@@ -11,7 +11,7 @@ load_dotenv(".env")
 
 app = Flask(__name__)
 
-res_queue_url = 'https://sqs.us-east-1.amazonaws.com/654654563274/1229679960-res-queue'
+res_queue_url = 'https://sqs.us-east-1.amazonaws.com/654654563274/1229679960-resp-queue'
 req_queue_url = 'https://sqs.us-east-1.amazonaws.com/654654563274/1229679960-req-queue'
 input_bucket = '1229679960-in-bucket'
 
@@ -131,10 +131,12 @@ def process_image():
                 source /home/ubuntu/model/venv/bin/activate
                 python3 /home/ubuntu/model/polling-script.py
                 '''
+
+                #python3 /home/ubuntu/model/polling-script.py
                 encoded_script = base64.b64encode(user_data_script.encode()).decode()
 
                 ec2_resource.create_instances(
-                    ImageId='ami-0c969209666227493',
+                    ImageId='ami-0fcfa3bb7cd31188f',
                     MinCount=1,
                     MaxCount=1,
                     InstanceType='t2.micro',
