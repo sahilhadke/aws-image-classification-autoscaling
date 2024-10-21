@@ -1,0 +1,1 @@
+scp -i /Users/sahilhadke/Desktop/PROJECTS/aws-image-classification-autoscaling/cse-546-key-pair.pem -r /Users/sahilhadke/Desktop/PROJECTS/aws-image-classification-autoscaling/workload-generator/face_images_1000 ubuntu@54.85.102.2:/home/ubuntu/face_images/

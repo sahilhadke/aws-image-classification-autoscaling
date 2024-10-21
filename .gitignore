@@ -85,9 +85,11 @@ ipython_config.py
 # key
 *.pem
 
+
+./*.sh
+
 # workload generated files
 workload-generator
-
 
 
 # pyenv
